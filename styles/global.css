@@ -1,0 +1,52 @@
+@import "@fontsource/poppins";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply font-poppins prose md:prose-lg max-w-none;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #ccc #fff;
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 4px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 20px;
+  border: 0px solid #fff;
+}
+
+input.hidden-password {
+  -webkit-text-security: disc;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+input[type='number'] {
+    -moz-appearance:textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+.highlight-none {
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+}
